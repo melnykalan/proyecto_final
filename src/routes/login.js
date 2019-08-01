@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/',function(req,res,next){
-    res.render('login',{mensaje:"Bienvenidx"});
+    res.render('login',{mensaje:""});
 });
 
 router.post('/loguearse', (req,res)=> {
