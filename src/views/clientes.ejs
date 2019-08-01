@@ -22,8 +22,8 @@
                     <td><%= data[i].direccion %></td>
                     <td><%= data[i].telefono %></td>
                     <td>
-                    <a href="/delete/<%= data[i].id %>" class="btn btn-danger">Eliminar</a>
-                    <a href="/update/<%= data[i].id %>" class="btn btn-info">Editar</a>
+                    <a href="/clientes/delete/<%= data[i].id %>" class="btn btn-danger">Eliminar</a>
+                    <a href="/clientes/update/<%= data[i].id %>" class="btn btn-info">Editar</a>
                     </td>
                     </tr>
 
@@ -36,7 +36,7 @@
       <div class="col-md-5">   
          <div class="card">
             <div class="card-body">
-                    <form action="/add" method="POST" >
+                    <form action="/clientes/add" method="POST" >
                         <div class="form-group">
                         <input type="text" name="nombre" placeholder="Nombre" class="form-control" required>
                            </div> 
@@ -50,6 +50,8 @@
                                        Guardar Cliente
                                    </button>
                            </form>
+                           <%= mensaje %>
+
 
 
             </div>

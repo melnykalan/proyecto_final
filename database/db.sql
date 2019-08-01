@@ -12,6 +12,14 @@ direccion VARCHAR(100) NOT NULL,
 telefono VARCHAR(15)
 );
 
+CREATE TABLE usuarios (
+nombre VARCHAR(50) PRIMARY KEY,
+password VARCHAR(100) NOT NULL
+);
+
+INSERT INTO usuarios (nombre, password) values ('admin', 'admin');
+
+
 -- Para mostrar todas las tablas --
 SHOW TABLES;
 
